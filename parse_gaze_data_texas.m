@@ -47,7 +47,7 @@ FIELDS_VECTOR = {'x','y','vx','vy','v'};
 
 %load subject data
 subjects = load_subject_data_texas_xlsx();
-NUM_SUBJ = length(subjects.sleep);
+NUM_SUBJ = 1;%length(subjects.sleep);
 subj_id = cell(1,NUM_SUBJ);
 
 for kk = 1:NUM_SUBJ

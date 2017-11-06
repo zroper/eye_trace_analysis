@@ -6,7 +6,7 @@ function [  ] = load_gaze_data_texas(  )
 
 global ROOT_DIR SAMP_RATE B_FILT A_FILT NUM_TRIAL
 
-ROOT_DIR = '~/Documents/vigor_across_modality/texas/';
+ROOT_DIR = '~/Desktop/GitHub/eye_trace_analysis';
 
 FILT_ORDER = 3;
 FILT_CUTOFF = 90;
@@ -14,7 +14,7 @@ NUM_BLOCK = 4;
 NUM_TRIAL = 100;
 
 %Butterworth filter parameters
-SAMP_RATE = 1000;
+SAMP_RATE = 1017.3;
 [B_FILT, A_FILT] = butter(FILT_ORDER, 2*FILT_CUTOFF/SAMP_RATE, 'low');
 
 %load subject data
